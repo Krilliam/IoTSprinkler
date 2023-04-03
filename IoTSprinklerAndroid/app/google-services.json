@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "941925823548",
+    "firebase_url": "https://iotsprinkler-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "iotsprinkler",
+    "storage_bucket": "iotsprinkler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941925823548:android:45b0a7ca29db2a0b2fbf39",
+        "android_client_info": {
+          "package_name": "com.iotsprinkler.iotsprinklerdelta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941925823548-s5v4a8n390fbfov652o38eu14s2s3fg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoi9ejJokCtAiJXFSVrN10Z7pX3F4__Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941925823548-s5v4a8n390fbfov652o38eu14s2s3fg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941925823548:android:2c6234a323568ec92fbf39",
+        "android_client_info": {
+          "package_name": "com.iotsprinkler.iotsprinklergamma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941925823548-s5v4a8n390fbfov652o38eu14s2s3fg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoi9ejJokCtAiJXFSVrN10Z7pX3F4__Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941925823548-s5v4a8n390fbfov652o38eu14s2s3fg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941925823548:android:f27e20537581c0182fbf39",
+        "android_client_info": {
+          "package_name": "com.iotsprinkler.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941925823548-s5v4a8n390fbfov652o38eu14s2s3fg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoi9ejJokCtAiJXFSVrN10Z7pX3F4__Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941925823548-s5v4a8n390fbfov652o38eu14s2s3fg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

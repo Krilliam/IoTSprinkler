@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IoTSprinkler</string>
+    <string name="last_timestamp">Last Timestamp:</string>
+    <string name="last_humidity_value">Last humidity value:</string>
+</resources>

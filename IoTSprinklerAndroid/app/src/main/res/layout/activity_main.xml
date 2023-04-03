@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"/>
+
+    <ProgressBar
+        android:id="@+id/humidity_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:layout_below="@id/gif_image"/>
+
+    <ImageView
+        android:id="@+id/gif_image"
+        android:layout_width="154dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/help" />
+    <LinearLayout
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/humidity_progress_bar">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidity_progress_bar"
+        android:layout_marginTop="16dp"
+        android:text="@string/last_timestamp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/last_timestamp_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humidity_progress_bar"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/humidity_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/timestamp">
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_timestamp_textview"
+        android:layout_marginTop="16dp"
+        android:text="@string/last_humidity_value"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/humidity_value_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_timestamp_textview"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/threshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/humidity_value">
+        <EditText
+            android:id="@+id/threshold_edittext"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/humidity_value_textview"
+            android:layout_marginTop="16dp"
+            android:hint="Enter threshold value for watering"
+            android:textColorHint="@android:color/white"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/set_threshold_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/threshold_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Set Threshold"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/read_sensor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read sensor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/threshold" />
+
+    <Button
+        android:id="@+id/watering_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_sensor_button"
+        android:layout_centerHorizontal="true"
+        android:text="Water plants"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
