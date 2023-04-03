@@ -1,15 +1,3 @@
-
-/**
- * Created by K. Suwatchai (Mobizt)
- *
- * Email: k_suwatchai@hotmail.com
- *
- * Github: https://github.com/mobizt/Firebase-ESP-Client
- *
- * Copyright (c) 2023 mobizt
- *
- */
-
 /** This example will show how to access the RTDB in Test Mode (no authentication).
  */
 #include <Arduino.h>
@@ -26,11 +14,11 @@
 #include <addons/RTDBHelper.h>
 
 /* 1. Define the WiFi credentials */
-#define WIFI_SSID "BERTI"
-#define WIFI_PASSWORD "ababardbms"
+#define WIFI_SSID "YOUR_SSID"
+#define WIFI_PASSWORD "YOUR_PASSWORD"
 
 /* 2. Define the RTDB URL */
-#define DATABASE_URL "iotsprinkler-default-rtdb.europe-west1.firebasedatabase.app" //<databaseName>.firebaseio.com or <databaseName>.<region>.firebasedatabase.app
+#define DATABASE_URL "YOUR_DATABASE_URL" //<databaseName>.firebaseio.com or <databaseName>.<region>.firebasedatabase.app
 
 #define RELAY_PIN 32
 #define SENSOR_PIN 36
