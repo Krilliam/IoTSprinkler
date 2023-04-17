@@ -46,7 +46,7 @@ void sendReadings(){
   long int timestamp = timeClient.getEpochTime();
   int thresholdVal;
   int humidityVal = analogRead(SENSOR_PIN);
-  soilmoisturepercent = (humidityVal/1023)*3.3;
+   soilmoisturepercent = map(humidityVal,4095,0,0,100); //value of the effective soil humidity percentage
   Firebase.RTDB.getInt(&fbdo, "/sensorData/threshold",&thresholdVal);
   Serial.printf("Set int... %s\n", Firebase.RTDB.setInt(&fbdo, "/sensorData/humidity", soilmoisturepercent) ? "ok" : fbdo.errorReason().c_str());  
   Serial.println(soilmoisturepercent);
